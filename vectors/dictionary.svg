@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 1365.3333 1365.3333"
+   height="1365.3333"
+   width="1365.3333"
+   xml:space="preserve"
+   id="svg4903"
+   version="1.1"><metadata
+     id="metadata4909"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4907"><clipPath
+       id="clipPath4919"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path4917"
+         d="M 0,1024 H 1024 V 0 H 0 Z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+     id="g4911"><g
+       id="g4913"><g
+         clip-path="url(#clipPath4919)"
+         id="g4915"><g
+           transform="translate(933,190)"
+           id="g4921"><path
+             id="path4923"
+             style="fill:#b55655;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c 0,-55.229 -44.771,-100 -100,-100 h -643 c -55.229,0 -100,44.771 -100,100 v 643 c 0,55.229 44.771,100 100,100 h 643 C -44.771,743 0,698.229 0,643 Z" /></g></g></g><text
+       id="text4927"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:500px;font-family:Times;-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,218,366.2051)"><tspan
+         id="tspan4925"
+         y="0"
+         x="0 361">Aa</tspan></text>
+</g></svg>
