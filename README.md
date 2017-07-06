@@ -1,6 +1,6 @@
 <p align="center">
   <img width="730" height="323" src="flaticns.png"><br>
-  A flat icon set for OS X, for a more uniform dock. Originally by [Tina Latif](http://tinalatif.com).
+  A flat icon set for OS X, for a more uniform dock. Originally by <a href="http://tinalatif.com">Tina Latif</a>.
 </p>
 
 ## Installation
