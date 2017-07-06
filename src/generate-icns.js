@@ -14,23 +14,21 @@ const distDir = '../dist/icns'
  * @param name the base name of an svg icon located in ../vectors
  */
 function generateIcon (name) {
-  var options = {
-    type: 'svg',
-    report: true,
-    modes: [ 'icns' ]
-  }
+  return new Promise(function (resolve, reject) {
+    var options = {
+      type: 'svg',
+      report: true,
+      modes: ['icns']
+    }
 
-  options.names = {
-    icns: name
-  }
+    options.names = {
+      icns: name
+    }
 
-  icongen(path.join(__dirname, iconDir, name + '.svg'), distDir, options)
-    .then(function (results) {
-      console.log(results)
-    })
-    .catch(function (err) {
-      console.error(err)
-    })
+    icongen(path.join(__dirname, iconDir, name + '.svg'), distDir, options)
+      .then(resolve)
+      .catch(reject)
+  })
 }
 
 module.exports = generateIcon
