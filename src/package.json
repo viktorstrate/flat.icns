@@ -1,0 +1,16 @@
+{
+  "name": "flat.icns",
+  "version": "1.0.0",
+  "description": "Installer and packager script for flat.icns",
+  "main": "index.js",
+  "repository": "https://github.com/viktorstrate/flat.icns",
+  "author": "Viktor Hundahl Strate",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "async": "^2.5.0",
+    "cli": "^1.0.1",
+    "icon-gen": "^1.1.3",
+    "mkdirp": "^0.5.1",
+    "svg2png": "^4.1.1"
+  }
+}
