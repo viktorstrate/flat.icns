@@ -26,7 +26,7 @@ examples:\n
 \t    ./`basename $0` -n firefox -i\n"
 
 # constants
-PNG_DIR="./png"
+PNG_DIR="./pngs"
 ICNS_DIR="./icns"
 SVG_DIR="./vectors"
 SVG_FILES="${SVG_DIR}/*.svg"
