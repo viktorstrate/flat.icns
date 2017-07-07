@@ -86,3 +86,5 @@ The easiest way to install the dependencies it with [Homebrew](https://brew.sh/)
 brew install imagemagick libicns
 ```
 
+> NOTE: If you prefer node.js or don't want to install the dependencies. Then you can use the cli in `src/`
+
