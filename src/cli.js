@@ -32,14 +32,14 @@ if (!options.icns && !options.png) {
 }
 
 if (options.icns) {
-  mkdirp(path.join(__dirname, '../dist/icns'), function (err) {
+  mkdirp(path.join(__dirname, '../icns'), function (err) {
     if (err)
       cli.fatal('Could not create directory for icns: ' + path.join(__dirname, '../dist/icns\n' + err))
   })
 }
 
 if (options.png) {
-  mkdirp(path.join(__dirname, '../dist/png'), function (err) {
+  mkdirp(path.join(__dirname, '../png'), function (err) {
     if (err)
       cli.fatal('Could not create directory for png: ' + path.join(__dirname, '../dist/png\n' + err))
   })
