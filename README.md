@@ -3,6 +3,14 @@
   A flat icon set for macOS, for a more uniform dock. Originally by <a href="https://github.com/tinalatif/flat.icns">Tina Latif</a>.
 </p>
 
+# About this fork
+
+This is a [fork](https://help.github.com/articles/fork-a-repo/) of the original repository by Tina Latif.
+I have made this fork, to keep the project alive and up to date with icons for new apps.
+
+I have tried to make the project more generic, by replacing the Adobe Illustrator files with svg files. Which makes it easier for people without Creative Cloud to contribute.
+Some new scripts have been added to make it easier to convert svg files to icns and png, see [contributing](https://github.com/viktorstrate/flat.icns#contribute).
+
 # Installation
 
 ## Method 1: Icon Manager (Recommended)
@@ -51,11 +59,29 @@ Some programs may require manual installation (for example, if they are not dire
 
 For the best results, I recommend you use a [2D dock instead of a 3D dock](http://hints.macworld.com/images/105dockcomparo.jpg).
 
-## Requests
+# Requests
 
 If you want an icon that's not there, the preferred way of requesting is to file an issue for it.
 
-## Contribute
+You are more than welcome to send a pull request with a new icon, see [contribute](https://github.com/viktorstrate/flat.icns#contribute).
 
-If you want to add icons, I've provided a template for the size.
+# Contribute
+
+## Step 1: Making the icon
+If you want to add icons, I've provided a [template](https://github.com/viktorstrate/flat.icns/blob/master/template.svg) for the size.
 </br>Use the red as a guideline for centered icons.
+
+The template can either be opened using Adobe Illustrator, or Inkscape for a free alternative.
+
+## Step 2: Saving and generating required files
+Before you can send a pull request, you must generate a 1024x1024 size PNG image, and an ICNS file, these image files are required to install the icon pack.
+
+1. Save the icon to `./vectors` as an svg file.
+
+2. Generate required files, by running `./build.sh` from the terminal. You might need some dependencies for the script to work.
+
+The easiest way to install the dependencies it with [Homebrew](https://brew.sh/), which you can install from their website. After installing Homebrew run the following command from the terminal.
+
+```shell
+brew install imagemagick libicns
+```
