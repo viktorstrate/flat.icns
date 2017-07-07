@@ -5,7 +5,7 @@ set -o errexit
 set -o nounset
 
 # constants
-URL="https://github.com/tinalatif/flat.icns/archive/master.zip"
+URL="https://github.com/viktorstrate/flat.icns/archive/master.zip"
 DIR="/icons_backup"
 APPS="/Applications"
 

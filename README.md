@@ -15,14 +15,19 @@ Just drag and drop the icons onto their corresponding applications, and then log
 
 The Automated Script downloads the latest flat.icns zip and replaces the icons for you.
 
-Open the terminal and run this command, to download and execute the script
+Open the terminal and run this command, to download and execute the script.
 
 ```shell
-curl https://raw.githubusercontent.com/tinalatif/flat.icns/master/install.sh | sudo sh
+curl https://raw.githubusercontent.com/viktorstrate/flat.icns/master/install.sh | sudo sh
 ```
 
-Note: The script isn't perfect and doesn't have a revert option, use with conscience.
-</br> This will be updated in near future.
+### Uninstall
+
+To uninstall flat.icns, open up a terminal and run this command, to download and execute the uninstallation script.
+
+```shell
+curl https://raw.githubusercontent.com/viktorstrate/flat.icns/master/uninstall.sh | sudo sh
+```
 
 ## Method 3: Manual installation
 
