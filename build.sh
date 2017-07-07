@@ -13,6 +13,7 @@ where:\n
 \t    -i  generate icns files\n
 \t    -a  generate files for all vectors\n
 \t    -n  generate files for specified vector\n
+\t    -f  replace files if they already exists
 \n
 examples:\n
 \t    generate icns and png files for all vectors\n
@@ -53,30 +54,40 @@ generate_icons() {
 }
 
 generate_icns() {
-    echo "${Cyan}Generating icns${Color_Off}"
-    if [ -f "$PNG_DIR/$1.png" ]; then
-        png2icns "${ICNS_DIR}/$1.icns" "$PNG_DIR/$1.png"
+    if [ -f "$ICNS_DIR/$1.icns" ]; then
+        echo "${Cyan}$1.icns does already exists, skipping, use -f to replace.${Color_Off}"
     else
-        echo "Required png does not exists, skipping $1"
+        echo "${Cyan}Generating icns${Color_Off}"
+        if [ -f "$PNG_DIR/$1.png" ]; then
+            png2icns "${ICNS_DIR}/$1.icns" "$PNG_DIR/$1.png"
+        else
+            echo "Required png does not exists, skipping $1"
+        fi
     fi
 }
 
 generate_png() {
-    echo "${Cyan}Generating png${Color_Off}"
-    convert -resize 1024 "${SVG_DIR}/$1.svg" "${PNG_DIR}/$1.png"
+    if [ -f "$PNG_DIR/$1.png" ]; then
+        echo "${Cyan}$1.png does already exists, skipping, use -f to replace.${Color_Off}"
+    else
+        echo "${Cyan}Generating png${Color_Off}"
+        convert -resize 1024 "${SVG_DIR}/$1.svg" "${PNG_DIR}/$1.png"
+    fi
 }
 
 # flags
 gen_icns="false"
 gen_all="false"
 gen_name=""
+gen_force="false"
 show_usage="false"
 
-while getopts "ipan:h" flag; do
+while getopts "ipan:fh" flag; do
     case $flag in
         i) gen_icns="true" ;;
         a) gen_all="true" ;;
         n) gen_name="$OPTARG" ;;
+        f) gen_force="true" ;;
         h) show_usage="true" ;;
         *) echo "Unexpected option $flag, type -h for help."; exit ;;
     esac
