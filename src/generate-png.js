@@ -7,7 +7,7 @@ const fs = require('fs')
 const svg2png = require('svg2png')
 
 const iconDir = '../vectors'
-const distDir = '../dist/png'
+const distDir = '../png'
 
 /**
  * Generate a 1024x1024px png from the specified icon name, and place it in ../dist/png
@@ -15,21 +15,21 @@ const distDir = '../dist/png'
  */
 function generatePNG (name) {
   return new Promise(function(resolve, reject) {
-    fs.readFile(path.join(__dirname, iconDir, name + '.svg'), function (err, sourceBuffer) {
-      if(err){
-        reject(err)
-      }
+  fs.readFile(path.join(__dirname, iconDir, name + '.svg'), function (err, sourceBuffer) {
+    if(err){
+      reject(err)
+    }
 
-      svg2png(sourceBuffer, { width: 1080, height: 1080 })
-        .then(function (buffer) {
-          fs.writeFile(path.join(__dirname, distDir, name + '.png'), buffer, function (err) {
-            if (err)
-              reject(err)
+    svg2png(sourceBuffer, { width: 1024, height: 1024 })
+      .then(function (buffer) {
+        fs.writeFile(path.join(__dirname, distDir, name + '.png'), buffer, function (err) {
+          if (err)
+            reject(err)
 
-            resolve(name)
-          })
+          resolve(name)
         })
-    })
+      })
+  })
   })
 }
 

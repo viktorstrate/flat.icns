@@ -7,7 +7,7 @@ const path = require('path')
 const icongen = require('icon-gen')
 
 const iconDir = '../vectors'
-const distDir = '../dist/icns'
+const distDir = '../icns'
 
 /**
  * Generate an icns file from the specified icon name, and place it in ../dist/icns
