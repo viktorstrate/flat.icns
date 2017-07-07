@@ -71,7 +71,7 @@ generate_png() {
         echo "${Cyan}$1.png does already exists, skipping, use -f to replace.${Color_Off}"
     else
         echo "${Cyan}Generating png${Color_Off}"
-        convert -resize 1024 "${SVG_DIR}/$1.svg" "${PNG_DIR}/$1.png"
+        convert -resize 1024 -background none "${SVG_DIR}/$1.svg" "${PNG_DIR}/$1.png"
     fi
 }
 
