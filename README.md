@@ -1,19 +1,17 @@
 <p align="center">
   <img width="730" height="323" src="flaticns.png"><br>
-  A flat icon set for macOS & GTK, for a more uniform dock. Originally by <a href="https://github.com/tinalatif/flat.icns">Tina Latif</a>.
+  A flat icon set for macOS, for a more uniform dock. Originally by <a href="https://github.com/tinalatif/flat.icns">Tina Latif</a>.
 </p>
 
 # Installation
 
-## MacOS
-
-### Method 1: Icon Manager (Recommended)
+## Method 1: Icon Manager (Recommended)
 
 There are a few icon managers out there. I use and recommend [LiteIcon](http://www.freemacsoft.net/liteicon).
 
 Just drag and drop the icons onto their corresponding applications, and then log out and back in to refresh the dock.
 
-### Method 2: Automated Script
+## Method 2: Automated Script
 
 The Automated Script downloads the latest flat.icns zip and replaces the icons for you.
 
@@ -26,7 +24,7 @@ curl https://raw.githubusercontent.com/tinalatif/flat.icns/master/install.sh | s
 Note: The script isn't perfect and doesn't have a revert option, use with conscience.
 </br> This will be updated in near future.
 
-### Method 3: Manual installation
+## Method 3: Manual installation
 
 Some programs may require manual installation (for example, if they are not directly in the Applications folder). The icns folder contains all the .icns files for this.
 
@@ -35,7 +33,7 @@ Some programs may require manual installation (for example, if they are not dire
 3. Right-click on the program and select 'Get Info'
 4. Drag the .icns file onto the existing icon for the program in the info panel
 
-#### To install the Calender app:
+### To install the Calender app:
 1. Choose which icons you want to use from the flaticns folder and change the names to 'App.icns' and 'App-empty.icns' by right-clicking and selecting 'Get Info'
 2. Go to Applications, right click on the Calendar app, and select "Show Package Contents"
 3. Navigate to Calendar.app/Contents/Resources to find the 'App.icns' and the 'App-empty.icns' (recommended to make a back-up of these!)
@@ -44,13 +42,9 @@ Some programs may require manual installation (for example, if they are not dire
 6. Repeat step 4
 7. Go to terminal and enter "killall Dock" to refresh your dock
 
-### Flat dock
+## Flat dock
 
 For the best results, I recommend you use a [2D dock instead of a 3D dock](http://hints.macworld.com/images/105dockcomparo.jpg).
-
-## Linux
-
-    TODO
 
 ## Requests
 
