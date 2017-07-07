@@ -78,10 +78,11 @@ Before you can send a pull request, you must generate a 1024x1024 size PNG image
 
 1. Save the icon to `./vectors` as an svg file.
 
-2. Generate required files, by running `./build.sh` from the terminal. You might need some dependencies for the script to work.
+2. Generate required files, by running `./build.sh -ai` from the terminal. You might need some dependencies for the script to work.
 
 The easiest way to install the dependencies it with [Homebrew](https://brew.sh/), which you can install from their website. After installing Homebrew run the following command from the terminal.
 
 ```shell
 brew install imagemagick libicns
 ```
+
