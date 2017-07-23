@@ -19,25 +19,7 @@ There are a few icon managers out there. I use and recommend [LiteIcon](http://w
 
 Just drag and drop the icons onto their corresponding applications, and then log out and back in to refresh the dock.
 
-## Method 2: Automated Script
-
-The Automated Script downloads the latest flat.icns zip and replaces the icons for you.
-
-Open the terminal and run this command, to download and execute the script.
-
-```shell
-curl https://raw.githubusercontent.com/viktorstrate/flat.icns/master/install.sh | sudo sh
-```
-
-### Uninstall
-
-To uninstall flat.icns, open up a terminal and run this command, to download and execute the uninstallation script.
-
-```shell
-curl https://raw.githubusercontent.com/viktorstrate/flat.icns/master/uninstall.sh | sudo sh
-```
-
-## Method 3: Manual installation
+## Method 2: Manual installation
 
 Some programs may require manual installation (for example, if they are not directly in the Applications folder). The icns folder contains all the .icns files for this.
 
@@ -55,9 +37,6 @@ Some programs may require manual installation (for example, if they are not dire
 6. Repeat step 4
 7. Go to terminal and enter "killall Dock" to refresh your dock
 
-## Flat dock
-
-For the best results, I recommend you use a [2D dock instead of a 3D dock](http://hints.macworld.com/images/105dockcomparo.jpg).
 
 # Requests
 
