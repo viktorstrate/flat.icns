@@ -53,13 +53,13 @@ If you want to add icons, I've provided a [template](https://github.com/viktorst
 The template can either be opened using Adobe Illustrator, or Inkscape for a free alternative.
 
 ## Step 2: Saving and generating required files
-Before you can send a pull request, you must generate a 1024x1024 size PNG image, and an ICNS file, these image files are required to install the icon pack.
+Before you can send a pull request, you must generate a 1024x1024 size PNG image, and a ICNS file, these image files are required to install the icon pack.
 
 1. Save the icon to `./vectors` as an svg file.
 
 2. Generate required files, by running `./build.sh -ai` from the terminal. You might need some dependencies for the script to work.
 
-The easiest way to install the dependencies it with [Homebrew](https://brew.sh/), which you can install from their website. After installing Homebrew run the following command from the terminal.
+The easiest way to install the dependencies is by using [Homebrew](https://brew.sh/), which you can install from their website. After installing Homebrew run the following command from the terminal.
 
 ```shell
 brew install imagemagick libicns
