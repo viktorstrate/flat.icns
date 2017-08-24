@@ -7,7 +7,7 @@ const fs = require('fs')
 const svg2png = require('svg2png')
 
 const iconDir = '../vectors'
-const distDir = '../png'
+const distDir = '../pngs'
 
 /**
  * Generate a 1024x1024px png from the specified icon name, and place it in ../dist/png

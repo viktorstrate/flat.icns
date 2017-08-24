@@ -39,7 +39,7 @@ if (options.icns) {
 }
 
 if (options.png) {
-  mkdirp(path.join(__dirname, '../png'), function (err) {
+  mkdirp(path.join(__dirname, '../pngs'), function (err) {
     if (err)
       cli.fatal('Could not create directory for png: ' + path.join(__dirname, '../dist/png\n' + err))
   })
