@@ -46,11 +46,9 @@ You are more than welcome to send a pull request with a new icon, see [contribut
 
 # Contribute
 
-## Step 1: Making the icon
-If you want to add icons, I've provided a [template](https://github.com/viktorstrate/flat.icns/blob/master/template.svg) for the size.
-</br>Use the red as a guideline for centered icons.
-
-The template can either be opened using Adobe Illustrator, or Inkscape for a free alternative.
+## Step 1: Making icons
+If you want to add icons, I've provided some [templates](https://github.com/viktorstrate/flat.icns/tree/master/templates) for the size.
+Use the red as a guideline for centered icons.
 
 ## Step 2: Saving and generating required files
 Before you can send a pull request, you must generate a 1024x1024 size PNG image, and a ICNS file, these image files are required to install the icon pack.
