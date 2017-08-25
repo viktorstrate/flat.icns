@@ -30,6 +30,7 @@ PNG_DIR="./pngs"
 ICNS_DIR="./icns"
 SVG_DIR="./vectors"
 SVG_FILES="${SVG_DIR}/*.svg"
+TOTAL_ICONS=`ls -l ${SVG_DIR} | grep -e "\.svg$" | wc -l | tr -d '[:space:]'`
 
 # Colors
 Color_Off='\033[0m'       # Text Reset
@@ -42,37 +43,58 @@ Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
+current_icon=0
+
 # Functions
 generate_icons() {
-    echo "${Blue}Building files for ${1}${Color_Off}"
+  current_icon=$(($current_icon+1))
+  progress=$(($current_icon*100/$TOTAL_ICONS))
+  echo "${Blue}Building files for ${1}${Color_Off} - ${current_icon}/${TOTAL_ICONS} ${progress}%"
 
-    generate_png "$1"
+  generate_png "$1"
 
-    if [ "$gen_icns" = "true" ]; then
-        generate_icns "$1"
-    fi
+  if [ "$gen_icns" = "true" ]; then
+    generate_icns "$1"
+  fi
 }
 
 generate_icns() {
-    if [ -f "$ICNS_DIR/$1.icns" ]; then
-        echo "${Cyan}$1.icns does already exists, skipping, use -f to replace.${Color_Off}"
+  if [ -f "$ICNS_DIR/$1.icns" ]; then
+    echo "$1.icns does already exists, skipping, use -f to replace."
+  else
+    echo "${Blue}Generating $1.icns${Color_Off}"
+
+    files_missing="FALSE"
+
+    for SIZE in 16 32 128 256 512 1024; do
+      filename="$1@${SIZE}.png"
+      if [ ! -f "${PNG_DIR}/$1/${filename}" ]; then
+        files_missing="TRUE"
+        break
+      fi
+    done
+
+    if [ $files_missing = "FALSE" ]; then
+      imgdir="${PNG_DIR}/$1"
+      png2icns "${ICNS_DIR}/$1.icns" "${imgdir}/$1@16.png" "${imgdir}/$1@32.png" "${imgdir}/$1@128.png" "${imgdir}/$1@256.png" "${imgdir}/$1@512.png" "${imgdir}/$1@1024.png"
     else
-        echo "${Cyan}Generating icns${Color_Off}"
-        if [ -f "$PNG_DIR/$1.png" ]; then
-            png2icns "${ICNS_DIR}/$1.icns" "$PNG_DIR/$1.png"
-        else
-            echo "Required png does not exists, skipping $1"
-        fi
+      echo "${Red}Required PNG files does not exists, skipping $1${Color_Off}"
     fi
+  fi
 }
 
 generate_png() {
-    if [ -f "$PNG_DIR/$1.png" ]; then
-        echo "${Cyan}$1.png does already exists, skipping, use -f to replace.${Color_Off}"
+  mkdir -p "$PNG_DIR/$1"
+  for SIZE in 16 32 128 256 512 1024; do
+    filename="$1@${SIZE}.png"
+    output_dir="${PNG_DIR}/$1/${filename}"
+    if [ -f "$output_dir" ]; then
+      echo "${filename} does already exists, skipping, use -f to replace.${Color_Off}"
     else
-        echo "${Cyan}Generating png${Color_Off}"
-        convert -resize 1024 -background none "${SVG_DIR}/$1.svg" "${PNG_DIR}/$1.png"
+      echo "${Cyan}Generating png, ${filename}${Color_Off}"
+      convert -resize ${SIZE} -background none "${SVG_DIR}/$1.svg" "${output_dir}"
     fi
+  done
 }
 
 # flags
@@ -83,44 +105,43 @@ gen_force="false"
 show_usage="false"
 
 while getopts "ipan:fh" flag; do
-    case $flag in
-        i) gen_icns="true" ;;
-        a) gen_all="true" ;;
-        n) gen_name="$OPTARG" ;;
-        f) gen_force="true" ;;
-        h) show_usage="true" ;;
-        *) echo "Unexpected option $flag, type -h for help."; exit ;;
-    esac
+  case $flag in
+    i) gen_icns="true" ;;
+    a) gen_all="true" ;;
+    n) gen_name="$OPTARG" ;;
+    f) gen_force="true" ;;
+    h) show_usage="true" ;;
+    *) echo "${Red}Unexpected option $flag, type -h for help.${Color_Off}"; exit ;;
+  esac
 done
 
 # Check if help flag is set
 if [ "$show_usage" = "true" ]; then
-    echo $usage
-    exit
+  echo $usage
+  exit
 fi
 
 # Check if either all or name is set
 if [ "$gen_all" = "false" ] && [ -z "$gen_name" ]
 then
-    echo "Either -a or -n have to be set."
-    exit
+  echo "Either -a or -n have to be set."
+  exit
 fi
 
 # Make required directories
 mkdir -p $PNG_DIR
 if [ "$gen_icns" = "true" ]; then
-    mkdir -p $ICNS_DIR
+  mkdir -p $ICNS_DIR
 fi
 
 if [ "$gen_all" = "true" ]; then
-    # If -a is set
-    for icon in $SVG_FILES; do
-        basename=${icon##*/}
-        basename=${basename%.svg}
-        generate_icons "$basename"
-    done
+  # If -a is set
+  for icon in $SVG_FILES; do
+    basename=${icon##*/}
+    basename=${basename%.svg}
+    generate_icons "$basename"
+  done
 else
-    # if -n is set
-    generate_icons "$gen_name"
+  # if -n is set
+  generate_icons "$gen_name"
 fi
-
