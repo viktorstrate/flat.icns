@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Autodesk Fusion 360</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Autodesk-Fusion-360">
+            <rect id="Outer" fill="#FFB962" fill-rule="nonzero" x="92" y="92" width="840" height="840" rx="100"></rect>
+            <g id="Icon" transform="translate(286.000000, 221.000000)">
+                <polygon id="Rectangle" fill="#C76200" points="48 106.959937 238 0 238 584 48 584"></polygon>
+                <polygon id="Path-2" fill="#BE5A00" points="0 409 48.2317328 107 453 315.275862"></polygon>
+                <polygon id="Path-2" fill="#DB8D4A" points="238 359 238 204 453 314.579268"></polygon>
+                <path d="M48,107.001932 L48,399 L238,359.673675 L238,204.80358 L48.0034309,107 Z" id="Combined-Shape" fill="#934219"></path>
+                <polygon id="Path-3" fill="#6A1503" points="48 107 48.5501788 339 238 204.32366"></polygon>
+                <polygon id="Path-4" fill="#8B2500" points="48 546 48 331.894737 238 204"></polygon>
+                <path d="M237.876609,205 L238,205.063367 L140.572567,379.884585 L48,399 L48,332.412171 L237.876609,205 Z" id="Combined-Shape" fill="#792002"></path>
+                <polygon id="Path-5" fill="#E19D60" points="238 204 238 2.84217094e-14 414 80.6511628"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
