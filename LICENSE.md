@@ -1,4 +1,4 @@
-> The original repository by Tina Latif, does not contain any license. And until this issue is resolved, the repository is licensed as seen below. I have tried to find the best and the most fair license I could find.
+> The original repository by Tina Latif, does not contain any license. And until this issue is resolved ([tinalatif/flat.icns#9](https://github.com/tinalatif/flat.icns/issues/9)), the repository is licensed as seen below. I have tried to find the best and the most fair license I could find.
 
 All of the scripts and code in this repository is licensed under MIT. And all of the icons and graphical material is licensed under Creative Commons. Both of the licenses are listed below.
 
