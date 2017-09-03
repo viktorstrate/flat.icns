@@ -50,9 +50,9 @@ generate_icons() {
   if [ $gen_all = 'true' ]; then
     current_icon=$(($current_icon+1))
     progress=$(($current_icon*100/$TOTAL_ICONS))
-    echo "${Blue}Building files for ${1}${Color_Off} - ${current_icon}/${TOTAL_ICONS} ${progress}%"
+    echo "${Blue}Building files for ${Red}${1}${Color_Off} - ${current_icon}/${TOTAL_ICONS} ${progress}%"
   else
-    echo "${Blue}Building files for ${1}${Color_Off}"
+    echo "${Blue}Building files for ${Red}${1}${Color_Off}"
   fi
 
   generate_png "$1"
@@ -69,7 +69,7 @@ generate_icns() {
       rm "$ICNS_DIR/$1.icns"
     else
       echo "$1.icns does already exists, skipping, use -f to replace."
-      return 1
+      return 0
     fi
   fi
 
@@ -101,7 +101,7 @@ generate_png() {
       rm -rf "$PNG_DIR/$1/"
     else
       echo "PNGs for $1 does already exists, skipping, use -f to replace.${Color_Off}"
-      return 1
+      return 0
     fi
   fi
 
@@ -142,7 +142,7 @@ fi
 # Check if either all or name is set
 if [ "$gen_all" = "false" ] && [ -z "$gen_name" ]
 then
-  echo "Either -a or -n have to be set."
+  echo "Either -a or -n have to be set. See --help for more info."
   exit
 fi
 
