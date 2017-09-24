@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Magnet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Magnet">
+            <rect id="Outer" fill="#61AFE3" fill-rule="nonzero" x="92" y="92" width="840" height="840" rx="100"></rect>
+            <path d="M932,484 L567,484 C550.431458,484 537,470.568542 537,454 L537,92 L481,92 L481,932 L537,932 L537,570 C537,553.431458 550.431458,540 567,540 L932,540 L932,484 L932,484 Z" id="Combined-Shape" fill="#C5E8F3"></path>
+            <g id="dots" transform="translate(152.000000, 152.000000)" fill="#C5E8F3">
+                <g id="Group">
+                    <circle id="Oval" cx="18" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="62" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="106" cy="18" r="18"></circle>
+                </g>
+            </g>
+            <g id="dots" transform="translate(600.000000, 152.000000)" fill="#C5E8F3">
+                <g id="Group">
+                    <circle id="Oval" cx="18" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="62" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="106" cy="18" r="18"></circle>
+                </g>
+            </g>
+            <g id="dots" transform="translate(600.000000, 601.000000)" fill="#C5E8F3">
+                <g id="Group">
+                    <circle id="Oval" cx="18" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="62" cy="18" r="18"></circle>
+                    <circle id="Oval" cx="106" cy="18" r="18"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
