@@ -75,7 +75,7 @@ generate_png() {
   mkdir -p "${output_dir}"
 
   # GENERATE NORMAL ICONS
-  for SIZE in 128 256 512 1024; do
+  for SIZE in 16 32 128 256 512 1024; do
     filename="icon_${SIZE}x${SIZE}.png"
     filename_retina="icon_${SIZE}x${SIZE}@2.png"
 
