@@ -26,7 +26,7 @@ examples:\n
 \t    ./`basename $0` -n firefox -i\n"
 
 # constants
-PNG_DIR="./pngs"
+ICONSET_DIR="./iconsets"
 ICNS_DIR="./icns"
 SVG_DIR="./vectors"
 SVG_FILES="${SVG_DIR}/*.svg"
@@ -56,49 +56,16 @@ generate_icons() {
   fi
 
   generate_png "$1"
+  generate_icns "$1"
 
-  if [ "$gen_icns" = "true" ]; then
-    generate_icns "$1"
-  fi
-}
-
-generate_icns() {
-  if [ -f "$ICNS_DIR/$1.icns" ]; then
-    if [ $gen_force = "true" ]; then
-      echo "${Blue}Removing old Icon for $1"
-      rm "$ICNS_DIR/$1.icns"
-    else
-      echo "$1.icns does already exists, skipping, use -f to replace."
-      return 0
-    fi
-  fi
-
-  echo "${Blue}Generating $1.icns${Color_Off}"
-
-  files_missing="FALSE"
-
-  for SIZE in 16 32 128 256 512 1024; do
-    filename="$1@${SIZE}.png"
-    if [ ! -f "${PNG_DIR}/$1/${filename}" ]; then
-      files_missing="TRUE"
-      break
-    fi
-  done
-
-  if [ $files_missing = "FALSE" ]; then
-    imgdir="${PNG_DIR}/$1"
-    png2icns "${ICNS_DIR}/$1.icns" "${imgdir}/$1@16.png" "${imgdir}/$1@32.png" "${imgdir}/$1@128.png" "${imgdir}/$1@256.png" "${imgdir}/$1@512.png" "${imgdir}/$1@1024.png"
-  else
-    echo "${Red}Required PNG files does not exists, skipping $1${Color_Off}"
-  fi
 }
 
 generate_png() {
-  output_dir="${PNG_DIR}/$1/"
+  output_dir="${ICONSET_DIR}/$1.iconset/"
   if [ -d "$output_dir" ]; then
     if [ $gen_force = "true" ]; then
       echo "${Blue}Removing old PNGs for $1"
-      rm -rf "$PNG_DIR/$1/"
+      rm -rf "$ICONSET_DIR/$1/"
     else
       echo "PNGs for $1 does already exists, skipping, use -f to replace.${Color_Off}"
       return 0
@@ -106,17 +73,37 @@ generate_png() {
   fi
 
   mkdir -p "${output_dir}"
-  for SIZE in 16 32 128 256 512 1024; do
-    filename="$1@${SIZE}.png"
-    output_file="${output_dir}/${filename}"
+
+  # GENERATE NORMAL ICONS
+  for SIZE in 128 256 512 1024; do
+    filename="icon_${SIZE}x${SIZE}.png"
+    filename_retina="icon_${SIZE}x${SIZE}@2.png"
+
+    size_retina=$(($SIZE*2))
 
     echo "${Cyan}Generating png, ${filename}${Color_Off}"
-    convert -resize ${SIZE} -background none "${SVG_DIR}/$1.svg" "${output_file}"
+    rsvg-convert -h ${SIZE} "${SVG_DIR}/$1.svg" -o "${output_dir}/${filename}"
+    #convert -resize ${SIZE} -background none "${SVG_DIR}/$1.svg" "${output_file}"
+  done
+
+  # GENERATE RETINA ICONS
+  for SIZE in 32 64 256 512 1024; do
+    filename_retina="icon_${SIZE}x${SIZE}@2x.png"
+
+    size_retina=$(($SIZE*2))
+
+    echo "${Cyan}Generating png, ${filename_retina} @2x${Color_Off}"
+    rsvg-convert -h ${size_retina} "${SVG_DIR}/$1.svg" -o "${output_dir}/${filename_retina}"
+    #convert -resize ${SIZE} -background none "${SVG_DIR}/$1.svg" "${output_file}"
   done
 }
 
+generate_icns() {
+  iconutil -c icns "${ICONSET_DIR}/$1.iconset/"
+  mv "${ICONSET_DIR}/$1.icns" "${ICNS_DIR}/$1.icns"
+}
+
 # flags
-gen_icns="false"
 gen_all="false"
 gen_name=""
 gen_force="false"
@@ -124,7 +111,6 @@ show_usage="false"
 
 while getopts "ipan:fh" flag; do
   case $flag in
-    i) gen_icns="true" ;;
     a) gen_all="true" ;;
     n) gen_name="$OPTARG" ;;
     f) gen_force="true" ;;
@@ -147,10 +133,8 @@ then
 fi
 
 # Make required directories
-mkdir -p $PNG_DIR
-if [ "$gen_icns" = "true" ]; then
-  mkdir -p $ICNS_DIR
-fi
+mkdir -p $ICONSET_DIR
+mkdir -p $ICNS_DIR
 
 if [ "$gen_all" = "true" ]; then
   # If -a is set
