@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Minecraft</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="92" y="92" width="840" height="840" rx="100"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Minecraft">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Outer" fill="#78553C" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <polygon id="Path-2" fill="#72AF4C" mask="url(#mask-2)" points="74.1850939 276.991473 167.068493 276.991473 167.068493 243.04659 244.589222 243.04659 244.589222 320.476614 396.919466 320.476614 396.919466 335.523433 473.52839 335.523433 473.52839 167.211466 549.440979 167.211466 549.440979 250.509392 626.551673 250.509392 626.551673 244.28315 703.078167 244.28315 703.078167 323.43738 779.750734 323.43738 779.750734 320.657225 855.792865 320.657225 855.792865 326.158262 957.072697 326.158262 957.072697 58.0203312 64.725213 58.0203312"></polygon>
+            <g id="Group" mask="url(#mask-2)" stroke-width="76.5" fill="#000000">
+                <g transform="translate(91.000000, 129.000000)">
+                    <path d="M306,459 L382.5,459" id="Shape" stroke="#878787" fill-rule="nonzero"></path>
+                    <path d="M0,0 L76.5,0" id="Path" stroke="#76B350" fill-rule="evenodd"></path>
+                    <path d="M612,153 L688.5,153" id="Path" stroke="#76B350" fill-rule="evenodd"></path>
+                    <path d="M229.5,306 L306,306" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M0,459 L76.5,459" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M535.5,459 L688.5,459" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M765,459 L841.5,459" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M0,535.5 L76.5,535.5" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M153,535.5 L306,535.5" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M229.5,765 L382.5,765" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M459,765 L535.5,765" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M688.5,765 L841.5,765" id="Path" stroke="#B8855F" fill-rule="evenodd"></path>
+                    <path d="M0,306 L76.5,306" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M153,306 L229.5,306" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M382.5,306 L459,306" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M153,382.5 L306,382.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M382.5,382.5 L459,382.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M306,535.5 L459,535.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M612,535.5 L688.5,535.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M765,535.5 L841.5,535.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M0,612 L76.5,612" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M229.5,612 L306,612" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M382.5,612 L459,612" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M688.5,612 L841.5,612" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M0,688.5 L153,688.5" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M0,765 L153,765" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M535.5,765 L612,765" id="Path" stroke="#956C4D" fill-rule="evenodd"></path>
+                    <path d="M76.5,306 L153,306" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M459,306 L612,306" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M0,382.5 L76.5,382.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M306,382.5 L382.5,382.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M688.5,382.5 L841.5,382.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M153,459 L306,459" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M382.5,459 L535.5,459" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M688.5,459 L765,459" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M76.5,535.5 L153,535.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M459,535.5 L612,535.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M76.5,612 L229.5,612" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M306,612 L382.5,612" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M459,612 L535.5,612" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M612,612 L688.5,612" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M229.5,688.5 L382.5,688.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M535.5,688.5 L841.5,688.5" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M153,765 L229.5,765" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M382.5,765 L459,765" id="Path" stroke="#78553C" fill-rule="evenodd"></path>
+                    <path d="M306,229.5 L382.5,229.5" id="Shape" stroke="#73B04D" fill-rule="nonzero"></path>
+                    <path d="M76.5,229.5 L153,229.5" id="Shape" stroke="#6C6C6C" fill-rule="nonzero"></path>
+                    <path d="M459,76.5 L535.5,76.5" id="Shape" stroke="#6AA745" fill-rule="nonzero"></path>
+                    <path d="M535.5,76.5 L612,76.5" id="Shape" stroke="#64A13F" fill-rule="nonzero"></path>
+                    <path d="M688.5,76.5 L765,76.5" id="Shape" stroke="#94C168" fill-rule="nonzero"></path>
+                    <path d="M765,76.5 L841.5,76.5" id="Shape" stroke="#91BE65" fill-rule="nonzero"></path>
+                    <path d="M0,153 L76.5,153" id="Shape" stroke="#8EBB62" fill-rule="nonzero"></path>
+                    <path d="M153,153 L229.5,153" id="Shape" stroke="#9DCA71" fill-rule="nonzero"></path>
+                    <path d="M229.5,153 L306,153" id="Shape" stroke="#66A341" fill-rule="nonzero"></path>
+                    <path d="M459,153 L535.5,153" id="Shape" stroke="#72AF4C" fill-rule="nonzero"></path>
+                    <path d="M688.5,153 L765,153" id="Shape" stroke="#81BE5B" fill-rule="nonzero"></path>
+                    <path d="M765,153 L841.5,153" id="Shape" stroke="#93C067" fill-rule="nonzero"></path>
+                    <path d="M382.5,76.5 L459,76.5 M76.5,153 L153,153 M382.5,153 L459,153 M535.5,153 L612,153 M0,229.5 L76.5,229.5 M153,229.5 L306,229.5 M382.5,229.5 L612,229.5 M688.5,229.5 L765,229.5 M306,306 L382.5,306 M612,306 L841.5,306 M76.5,382.5 L153,382.5 M459,382.5 L688.5,382.5 M76.5,459 L153,459 M688.5,535.5 L765,535.5 M535.5,612 L612,612 M153,688.5 L229.5,688.5 M382.5,688.5 L535.5,688.5 M612,765 L688.5,765" id="Shape" stroke="#583D2B" fill-rule="nonzero"></path>
+                    <path d="M0,76.5 L76.5,76.5" id="Shape" stroke="#77B451" fill-rule="nonzero"></path>
+                    <path d="M153,76.5 L229.5,76.5" id="Shape" stroke="#8BB85F" fill-rule="nonzero"></path>
+                    <path d="M229.5,76.5 L306,76.5" id="Shape" stroke="#82AF56" fill-rule="nonzero"></path>
+                    <path d="M306,76.5 L382.5,76.5" id="Shape" stroke="#84B158" fill-rule="nonzero"></path>
+                    <path d="M76.5,0 L153,0 M688.5,0 L765,0" id="Shape" stroke="#78B552" fill-rule="nonzero"></path>
+                    <path d="M153,0 L229.5,0" id="Shape" stroke="#75B24F" fill-rule="nonzero"></path>
+                    <path d="M229.5,0 L382.5,0" id="Shape" stroke="#68A543" fill-rule="nonzero"></path>
+                    <path d="M382.5,0 L459,0" id="Shape" stroke="#71AE4B" fill-rule="nonzero"></path>
+                    <path d="M459,0 L535.5,0 M612,76.5 L688.5,76.5 M612,229.5 L688.5,229.5" id="Shape" stroke="#619E3C" fill-rule="nonzero"></path>
+                    <path d="M535.5,0 L612,0" id="Path" stroke="#6EAB48" fill-rule="evenodd"></path>
+                    <path d="M76.5,76.5 L153,76.5" id="Path" stroke="#6EAB48" fill-rule="evenodd"></path>
+                    <path d="M612,0 L688.5,0" id="Shape" stroke="#80BD5A" fill-rule="nonzero"></path>
+                    <path d="M765,0 L841.5,0" id="Shape" stroke="#6CA947" fill-rule="nonzero"></path>
+                    <path d="M306,153 L382.5,153" id="Shape" stroke="#6BA846" fill-rule="nonzero"></path>
+                    <path d="M765,229.5 L841.5,229.5" id="Shape" stroke="#6FAC49" fill-rule="nonzero"></path>
+                    <path d="M0,0 L76.5,0" id="Path" stroke="#76B350" fill-rule="evenodd"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
