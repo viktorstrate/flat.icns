@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Insomnia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Insomnia">
+            <rect id="Outer" fill="#7A75C9" fill-rule="nonzero" x="92" y="92" width="840" height="840" rx="100"></rect>
+            <path d="M270.263649,470.555896 C268.771066,481.490806 268,492.655357 268,504 C268,639.309764 377.690236,749 513,749 C648.309764,749 758,639.309764 758,504 C758,368.690236 648.309764,259 513,259 C495.085038,259 477.619178,260.922833 460.79754,264.573376 C482.112144,289.313114 495,321.530103 495,356.75964 C495,434.764537 431.8155,498 353.873469,498 C322.579828,498 293.665122,487.806356 270.263649,470.555896 Z M512.5,805 C350.956711,805 220,674.043289 220,512.5 C220,350.956711 350.956711,220 512.5,220 C674.043289,220 805,350.956711 805,512.5 C805,674.043289 674.043289,805 512.5,805 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
