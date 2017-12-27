@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Etcher</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="512.5" cy="512.5" r="292.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Path" fill="#939B9E" x="92" y="92" width="840" height="840" rx="100"></rect>
+        <g id="Etcher">
+            <g id="Disc">
+                <use fill="#393C3D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#25282A" stroke-width="20" cx="512.5" cy="512.5" r="282.5"></circle>
+            </g>
+            <path d="M278.792833,372.233196 L744.002986,653.74477 C720.569097,692.024578 687.927632,724.056372 649.159692,746.759052 L372.214199,278.814656 C333.936535,301.806732 301.786038,333.956287 278.792833,372.233196 Z" id="Shine" fill="#515455"></path>
+            <g id="Label" transform="translate(395.000000, 395.000000)">
+                <circle id="Oval" fill="#D9AB18" cx="118" cy="118" r="118"></circle>
+                <circle id="Oval-2" fill="#393C3D" cx="117.23871" cy="117.23871" r="15.9870968"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
