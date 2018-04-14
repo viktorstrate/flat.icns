@@ -55,21 +55,19 @@ generate_icons() {
     echo "${Blue}Building files for ${Red}${1}${Color_Off}"
   fi
 
-  generate_png "$1"
-  generate_icns "$1"
+  if [ ! -d "${ICONSET_DIR}/$1.iconset/" ] || [ $gen_force = "true" ]; then
+    generate_png "$1"
+    generate_icns "$1"
+  fi
 
 }
 
 generate_png() {
   output_dir="${ICONSET_DIR}/$1.iconset/"
-  if [ -d "$output_dir" ]; then
-    if [ $gen_force = "true" ]; then
+
+  if [ $gen_force = "true" ]; then
       echo "${Blue}Removing old PNGs for $1"
       rm -rf "$ICONSET_DIR/$1/"
-    else
-      echo "PNGs for $1 does already exists, skipping, use -f to replace.${Color_Off}"
-      return 0
-    fi
   fi
 
   mkdir -p "${output_dir}"
