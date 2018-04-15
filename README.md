@@ -15,13 +15,13 @@ Some new scripts have been added to make it easier to convert svg files to icns 
 
 ## Method 1: Automated script
 The fastest way to install the icons, is using the `install.sh` script.
+This method in does only install icons for applications, and does therefore not replace system icons, like folders.
+To change system apps, it is recommended to use an icon manager as described with method 2.
 
-Follow these steps to install, using automated script.
-
-1) Download the iconpack [here](https://github.com/viktorstrate/flat.icns/archive/master.zip), or by clicking `Clone or download` -> `Download ZIP`
-2) Open `Terminal`, by searching for it with Spotlight (`⌘`+`Space`).
-3) Drag 'n drop `install.sh`, from the downloaded folder, to the `Terminal` window.
-4) Press enter to start installation
+1. Download the iconpack [here](https://github.com/viktorstrate/flat.icns/archive/master.zip), or by clicking `Clone or download` -> `Download ZIP`
+2. Open `Terminal`, by searching for it with Spotlight (`⌘`+`Space`).
+3. Drag 'n drop `install.sh`, from the downloaded folder, to the `Terminal` window.
+4. Press enter to start installation
 
 To restore the icons, run `./install.sh restore`
 
