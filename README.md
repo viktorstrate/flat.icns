@@ -13,13 +13,25 @@ Some new scripts have been added to make it easier to convert svg files to icns 
 
 # Installation
 
-## Method 1: Icon Manager (Recommended)
+## Method 1: Automated script
+The fastest way to install the icons, is using the `install.sh` script.
+
+Follow these steps to install, using automated script.
+
+1) Download the iconpack [here](https://github.com/viktorstrate/flat.icns/archive/master.zip), or by clicking `Clone or download` -> `Download ZIP`
+2) Open `Terminal`, by searching for it with Spotlight (`⌘`+`Space`).
+3) Drag 'n drop `install.sh`, from the downloaded folder, to the `Terminal` window.
+4) Press enter to start installation
+
+To restore the icons, run `./install.sh restore`
+
+## Method 2: Icon Manager
 
 There are a few icon managers out there. I use and recommend [LiteIcon](http://www.freemacsoft.net/liteicon).
 
 Just drag and drop the icons onto their corresponding applications, and then log out and back in to refresh the dock.
 
-## Method 2: Manual installation
+## Method 3: Manual installation
 
 Some programs may require manual installation (for example, if they are not directly in the Applications folder). The icns folder contains all the .icns files for this.
 
