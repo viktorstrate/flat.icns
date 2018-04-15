@@ -1,9 +1,15 @@
 #!/bin/sh
 
+# exit on errors
+set -o errexit
+set -o nounset
+
 # constants
-ICNS_DIR="./icns"
+BASEDIR=$(dirname "$0")
+
+ICNS_DIR="${BASEDIR}/icns"
 ICNS_FILES="${ICNS_DIR}/*.icns"
-FILEICON_DIR="./libs/fileicon.sh"
+FILEICON_DIR="${BASEDIR}/libs/fileicon.sh"
 
 ICON_PATH=(
   "/Applications"
@@ -22,6 +28,7 @@ Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
 set_icons() {
+  request_sudo
   echo "Installing icons..."
   for icon in $ICNS_FILES; do
     basename=${icon##*/}
@@ -31,7 +38,7 @@ set_icons() {
       if [ -d "${path}/${basename}.app" ]; then
         echo "Setting icon for ${Red}${basename}${Color_Off} at ${path}/${basename}.app"
 
-        bash ${FILEICON_DIR} set "${path}/${basename}.app" "${ICNS_DIR}/${basename}.icns"
+        sudo bash ${FILEICON_DIR} set "${path}/${basename}.app" "${ICNS_DIR}/${basename}.icns"
 
       fi
     done
@@ -39,6 +46,7 @@ set_icons() {
 }
 
 clear_icons() {
+  request_sudo
   echo "Restoring icons..."
   for icon in $ICNS_FILES; do
     basename=${icon##*/}
@@ -48,14 +56,23 @@ clear_icons() {
       if [ -d "${path}/${basename}.app" ]; then
         echo "Restoring original icon for ${Red}${basename}${Color_Off} at ${path}/${basename}.app"
 
-        bash ${FILEICON_DIR} rm "${path}/${basename}.app"
+        sudo bash ${FILEICON_DIR} rm "${path}/${basename}.app"
 
       fi
     done
   done
 }
 
-if [[ ! -z $1 ]]; then
+request_sudo() {
+  if [[ $EUID > 0 ]]; then
+    echo "You may be asked to enter your password, this is required to change some system icons"
+    sudo echo ""
+  fi
+}
+
+echo $#
+
+if [ $# -ge 1 ]; then
   case $1 in
     "help")
       echo "Usage: $0 [option]"
