@@ -13,6 +13,8 @@ Some new scripts have been added to make it easier to convert svg files to icns 
 
 # Installation
 
+> NOTE: To change icons for system apps (App Store, Safari, Mail etc.) on computers running OS X El Capitan (version 10.11) and later, system intregrity protection must be disabled. [Read more about SIP and how to disable it.](https://www.howtogeek.com/230424/how-to-disable-system-integrity-protection-on-a-mac-and-why-you-shouldnt/)
+
 ## Method 1: Automated script
 The fastest way to install the icons, is using the `install.sh` script.
 This method in does only install icons for applications, and does therefore not replace system icons, like folders.

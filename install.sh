@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# exit on errors
-set -o errexit
-set -o nounset
-
 # constants
 BASEDIR=$(dirname "$0")
 
