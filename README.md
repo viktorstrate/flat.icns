@@ -76,6 +76,6 @@ Before you can send a pull request, you must generate a 1024x1024 size PNG image
 The easiest way to install the dependencies is by using [Homebrew](https://brew.sh/), which you can install from their website. After installing Homebrew run the following command from the terminal.
 
 ```shell
-brew install imagemagick libicns
+brew install imagemagick libicns rsvg-convert
 ```
 
