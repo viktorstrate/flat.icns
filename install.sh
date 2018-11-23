@@ -9,6 +9,7 @@ FILEICON_DIR="${BASEDIR}/libs/fileicon.sh"
 
 ICON_PATH=(
   "/Applications"
+  "/Applications/Utilities"
   "$HOME/Applications"
   "/Applications/JetBrains Toolbox"
   "$HOME/Applications/JetBrains Toolbox"
@@ -32,7 +33,7 @@ set_icons() {
     basename=${icon##*/}
     basename=${basename%.icns}
 
-    for path in ${ICON_PATH}; do
+    for path in ${ICON_PATH[@]}; do
       if [ -d "${path}/${basename}.app" ]; then
         echo "Setting icon for ${Red}${basename}${Color_Off} at ${path}/${basename}.app"
 
