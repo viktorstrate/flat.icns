@@ -10,6 +10,8 @@ FILEICON_DIR="${BASEDIR}/libs/fileicon.sh"
 ICON_PATH=(
   "/Applications"
   "$HOME/Applications"
+  "/Applications/JetBrains Toolbox"
+  "$HOME/Applications/JetBrains Toolbox"
 )
 
 # Colors
