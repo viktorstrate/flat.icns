@@ -13,9 +13,16 @@ Some new scripts have been added to make it easier to convert svg files to icns 
 
 # Installation
 
-> NOTE: To change icons for system apps (App Store, Safari, Mail etc.) on computers running OS X El Capitan (version 10.11) and later, system intregrity protection must be disabled. [Read more about SIP and how to disable it.](https://www.howtogeek.com/230424/how-to-disable-system-integrity-protection-on-a-mac-and-why-you-shouldnt/)
+> NOTE: To change icons for system apps (App Store, Safari, Mail etc.) on computers running OS X El Capitan (version 10.11) and later, system integrity protection must be disabled. [Read more about SIP and how to disable it.](https://www.howtogeek.com/230424/how-to-disable-system-integrity-protection-on-a-mac-and-why-you-shouldnt/)
 
-## Method 1: Automated script
+## Method 1: Automator application
+The easiest way to install the icons, is to use the `Update flat icons` application, which is included with this repository.
+This method uses the automated script under the hood, and does the therefore not change system icons.
+
+1. Download the iconpack [here](https://github.com/viktorstrate/flat.icns/archive/master.zip), or by clicking `Clone or download` -> `Download ZIP`
+2. Doubleclick on the `Update flat icons` application, and follow the instructions.
+
+## Method 2: Automated script
 The fastest way to install the icons, is using the `install.sh` script.
 This method in does only install icons for applications, and does therefore not replace system icons, like folders.
 To change system apps, it is recommended to use an icon manager as described with method 2.
@@ -27,13 +34,13 @@ To change system apps, it is recommended to use an icon manager as described wit
 
 To restore the icons, run `./install.sh restore`
 
-## Method 2: Icon Manager
+## Method 3: Icon Manager
 
 There are a few icon managers out there. I use and recommend [LiteIcon](http://www.freemacsoft.net/liteicon).
 
 Just drag and drop the icons onto their corresponding applications, and then log out and back in to refresh the dock.
 
-## Method 3: Manual installation
+## Method 4: Manual installation
 
 Some programs may require manual installation (for example, if they are not directly in the Applications folder). The icns folder contains all the .icns files for this.
 
