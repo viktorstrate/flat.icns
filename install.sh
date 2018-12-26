@@ -11,6 +11,8 @@ ICON_PATH=(
   "/Applications"
   "/Applications/Utilities"
   "$HOME/Applications"
+  "/Applications/JetBrains Toolbox"
+  "$HOME/Applications/JetBrains Toolbox"
 )
 
 # Colors
